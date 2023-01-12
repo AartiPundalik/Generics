@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class Program
+    internal class Program 
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Welcome to the Generics Problem : ");
+            FindMaximum Number = new FindMaximum();
+            FindMaximum.FindMaxValue(20, 40, 50);
+            Console.ReadLine();
         }
     }
 }
