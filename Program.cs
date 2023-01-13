@@ -12,7 +12,7 @@ namespace Generics
         {
             Console.WriteLine("Welcome to the Generics Problem : ");
             FindMaximum Number = new FindMaximum();
-            FindMaximum.FindMaxValue(20, 40, 50);
+            FindMaximum.FindMaxValue("zya", "zzz", "rew");
             Console.ReadLine();
         }
     }
