@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using static Generics.FindMaxGenericsClass1;
+using static Generics.FindMaxParameter;
 
 namespace Generics
 {
@@ -28,6 +30,18 @@ namespace Generics
                 case 2:
                     GenericsFindMax<int>.FindMaxValue(14, 23, 12);
                     break;
+
+                case 3:
+                    new FindMaxGenericsClass<int>(20, 40, 50).TestMaximum();
+                    new FindMaxGenericsClass<float>(20.5f, 10.3f, 11.3f).TestMaximum();
+                    new FindMaxGenericsClass<string>("Apple", "Peach", "Banana").TestMaximum();
+                    break;
+
+                case 4:
+                    FindMaxParams.MaxValue(45, 23, 54, 6, 23, 43);
+                    FindMaxParams.MaxValue(45, 6, 23, 43);
+                    break;
+
 
                 default:
                     Console.WriteLine("Please choose the number given range");
