@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class FindMaximum
+    public class FindMaximum
     {
         public static void FindMaxValue(int first, int second, int third)
         {
@@ -20,11 +20,14 @@ namespace Generics
             }
             else if (third.CompareTo(first) >= 0 && third.CompareTo(second) >= 0)
             {
-                Console.WriteLine("{0} is Maxm", third);
+                Console.WriteLine("{0} is Maximum", third);
             }
             else
                 Console.WriteLine("All number are equal");
         }
+
+
+
     }
 }
 
@@ -32,5 +35,5 @@ namespace Generics
 
 
 
-    
+
 

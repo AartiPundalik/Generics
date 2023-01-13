@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class FindStringMax
+    internal class GenericsFindMax<T> where T : IComparable
     {
-        public static void FindMaxValue(string first, string second, string third)
+        public static void FindMaxValue(T first, T second, T third)
         {
             if (first.CompareTo(second) >= 0 && first.CompareTo(third) >= 0)
             {
@@ -26,7 +26,10 @@ namespace Generics
                 Console.WriteLine("All number are equal");
         }
     }
-
-
 }
+
+
+
+
+
 
